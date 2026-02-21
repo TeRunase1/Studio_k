@@ -26,7 +26,7 @@ export const initialProjects: Project[] = [
     title: "루미너스 브랜드 아이덴티티",
     category: "브랜딩",
     description: "현대적인 감각의 조명 브랜드 로고 및 패키지 디자인",
-    imageUrl: "/images/234.jpg",
+    imageUrl: "/234.jpg",
     tags: ["Adobe Illustrator", "Photoshop", "Branding"],
   },
   {
