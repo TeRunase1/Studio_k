@@ -5,7 +5,7 @@ import { useAppStore } from '@/context/AppContext';
 import { ProjectCard } from '@/components/ProjectCard';
 import { Link } from 'react-router-dom';
 import { SEO } from '@/components/SEO';
-import backImg from '@/assets/back.png';
+import { GeometricBackground } from '@/components/GeometricBackground';
 
 export default function HomePage() {
   const { siteConfig, projects } = useAppStore();
@@ -41,22 +41,13 @@ export default function HomePage() {
         className="relative h-screen flex items-center justify-center overflow-hidden"
         onMouseMove={handleMouseMove}
       >
-        {/* Background Image */}
+        {/* Background - Animated Geometric Canvas */}
         <div className="absolute inset-0 z-0">
-          <motion.div 
-            style={{ x: xMove, y: yMove, scale: 1.1 }}
-            className="w-full h-full"
-          >
-            <img 
-              src={backImg} 
-              alt="Abstract Blue Fluid Background" 
-              className="w-full h-full object-cover" 
-            />
-          </motion.div>
+          <GeometricBackground />
           
           {/* Dark Overlay for text readability */}
-          <div className="absolute inset-0 bg-black/30" />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-ding-black/20 to-ding-black" />
+          <div className="absolute inset-0 bg-black/40 pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black pointer-events-none" />
         </div>
         
         <div className="container mx-auto px-6 relative z-10 text-center">
