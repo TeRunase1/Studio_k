@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-ding-black: #050505;
+  --color-ding-dark: #111111;
+  --color-ding-blue: #1A365D;
+  --color-ding-blue-light: #2C5282;
+  
+  --font-sans: "Noto Sans KR", sans-serif;
+}
+
+body {
+  background-color: var(--color-ding-black);
+  color: white;
+  font-family: var(--font-sans);
+}
