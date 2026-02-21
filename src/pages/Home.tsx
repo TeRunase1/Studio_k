@@ -47,7 +47,7 @@ export default function HomePage() {
             className="w-full h-full"
           >
             <img 
-              src="/assets/back.png" 
+              src="/back.png" 
               alt="Abstract Blue Fluid Background" 
               className="w-full h-full object-cover" 
             />
