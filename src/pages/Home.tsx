@@ -44,7 +44,7 @@ export default function HomePage() {
         <div className="absolute inset-0 z-0">
           <motion.img 
             style={{ x: xMove, y: yMove, scale: 1.1 }}
-            src="back.png" 
+            src="/back.png" 
             alt="Abstract Blue Fluid Background" 
             className="w-full h-full object-cover" 
           />
