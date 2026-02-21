@@ -26,6 +26,12 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       <img
         src={project.imageUrl}
         alt={project.title}
+        onError={(e) => {
+          const target = e.target as HTMLImageElement;
+          if (!target.src.includes('picsum.photos')) {
+            target.src = `https://picsum.photos/seed/${project.id}/800/600`;
+          }
+        }}
         className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
       />
 

@@ -18,15 +18,16 @@ export interface SiteConfig {
 
 // 프로젝트 데이터를 여기서 수정하세요.
 // 이미지를 변경하려면:
-// 1. public/ 폴더에 이미지 파일을 넣으세요.
-// 2. 아래 imageUrl을 "/파일명.jpg" 형식으로 변경하세요.
+// 1. public/images 폴더에 이미지 파일을 넣으세요.
+// 2. 아래 imageUrl을 "/images/파일명.jpg" 형식으로 변경하세요.
+// 3. 배포 시 이미지가 안 보인다면, GitHub에 해당 이미지 파일이 실제로 업로드되었는지 확인하세요.
 export const initialProjects: Project[] = [
   {
     id: "1",
     title: "루미너스 브랜드 아이덴티티",
     category: "브랜딩",
     description: "현대적인 감각의 조명 브랜드 로고 및 패키지 디자인",
-    imageUrl: "/234.jpg",
+    imageUrl: "/images/234.jpg",
     tags: ["Adobe Illustrator", "Photoshop", "Branding"],
   },
   {
