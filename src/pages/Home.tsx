@@ -5,7 +5,7 @@ import { useAppStore } from '@/context/AppContext';
 import { ProjectCard } from '@/components/ProjectCard';
 import { Link } from 'react-router-dom';
 import { SEO } from '@/components/SEO';
-import backImg from '@/assets/back.png';
+import backImg from '../assets/back.png';
 
 export default function HomePage() {
   const { siteConfig, projects } = useAppStore();
@@ -43,12 +43,16 @@ export default function HomePage() {
       >
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
-          <motion.img 
+          <motion.div 
             style={{ x: xMove, y: yMove, scale: 1.1 }}
-            src={backImg} 
-            alt="Abstract Blue Fluid Background" 
-            className="w-full h-full object-cover" 
-          />
+            className="w-full h-full"
+          >
+            <img 
+              src={backImg} 
+              alt="Abstract Blue Fluid Background" 
+              className="w-full h-full object-cover" 
+            />
+          </motion.div>
           
           {/* Dark Overlay for text readability */}
           <div className="absolute inset-0 bg-black/30" />
