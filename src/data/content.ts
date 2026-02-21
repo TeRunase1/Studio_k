@@ -3,7 +3,7 @@ export interface Project {
   title: string;
   category: string;
   description: string;
-  imageUrl: string;
+  imageUrl: string; // 이미지 경로 (예: "/images/project1.jpg" 또는 외부 URL)
   tags: string[];
 }
 
@@ -16,13 +16,17 @@ export interface SiteConfig {
   contactPhone: string;
 }
 
+// 프로젝트 데이터를 여기서 수정하세요.
+// 이미지를 변경하려면:
+// 1. public/images 폴더에 이미지 파일을 넣으세요.
+// 2. 아래 imageUrl을 "/images/파일명.jpg" 형식으로 변경하세요.
 export const initialProjects: Project[] = [
   {
     id: "1",
     title: "루미너스 브랜드 아이덴티티",
     category: "브랜딩",
     description: "현대적인 감각의 조명 브랜드 로고 및 패키지 디자인",
-    imageUrl: "https://picsum.photos/seed/luminous/800/600",
+    imageUrl: "/images/234.jpg",
     tags: ["Adobe Illustrator", "Photoshop", "Branding"],
   },
   {
