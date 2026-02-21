@@ -5,7 +5,6 @@ import { useAppStore } from '@/context/AppContext';
 import { ProjectCard } from '@/components/ProjectCard';
 import { Link } from 'react-router-dom';
 import { SEO } from '@/components/SEO';
-import backImg from '../assets/back.png';
 
 export default function HomePage() {
   const { siteConfig, projects } = useAppStore();
@@ -48,7 +47,7 @@ export default function HomePage() {
             className="w-full h-full"
           >
             <img 
-              src={backImg} 
+              src="/assets/back.png" 
               alt="Abstract Blue Fluid Background" 
               className="w-full h-full object-cover" 
             />
